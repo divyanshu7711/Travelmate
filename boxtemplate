@@ -1,0 +1,77 @@
+<!-- box 8 starts here -->
+
+<div class="box1">
+    <div class="images">
+     <img src="Garh-Ganesh-Temple.jpg"  height="100%" width="100%" alt="images">        
+                    
+    </div>
+    <div class="details">
+     <table >
+         <tr >
+             <td width="55%" height="15%" class="nameofpalace"><h1>Garh-Ganesh-Temple</h1></td>
+             <td></td>
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </td>
+             <td></td>
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </td>
+             <td rowspan="5"  ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14225.697278501526!2d75.8344581639675!3d26.953459027918363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db11be9767295%3A0x97d34f11a313abd2!2sJal%20Mahal!5e0!3m2!1sen!2sin!4v1715207434711!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </td>
+             
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </td>
+             
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </td>
+             
+         </tr>
+         <tr>
+             <td width="55%"  height="12%">
+                 <ul>
+                     <li></li>
+                     <li> </li>
+                 </ul>
+             </td>
+             
+         </tr>
+     </table>
+
+    </div>
+
+
+ </div>
+
+
+
+ <!-- box 8 ends here -->
