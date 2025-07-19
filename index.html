@@ -3,42 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaipur Tourism - Explore the Pink City</title>
-    <meta name="description" content="Discover the beauty of Jaipur with our comprehensive tourism guide featuring historical sites, religious places, and adventure spots.">
+    <title>Document</title>
     <link rel="stylesheet" href="styler.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <div id="page">
 
             <!-- Header starts here -->
 
-            <header class="header">
+            <div class="header">
                     <div class="logo">
-                        <a href="index.html"> <img src="logo.png" height="100%" width="100%" alt="Jaipur Tourism Logo"></a>
+                        <a href="headder.html"> <img src="logo.png" height="100%" width="100%" ></a>
                     </div>
-                    
-                    <!-- Mobile menu toggle -->
-                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    
-                    <nav id="headitems">
+                    <div id="headitems">
                         <ul>
                             <li><a href="home.html">HOME</a></li>
                             <li><a href="historical.html">HISTORICAL</a></li>
                             <li><a href="religious.html">RELIGIOUS</a></li>
                             <li><a href="others.html">OTHERS</a></li>
-                            <li><a href="contact.html">CONTACT US</a></li>
-                        </ul>
-                    </nav>
+                            <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+                            </ul>
+
+                    </div>
 
             
-            </header>
+            </div>
 
 
             <!-- Header ends here -->
@@ -256,36 +245,7 @@
 
         </div>
 
-        <script>
-            function toggleMobileMenu() {
-                const nav = document.getElementById('headitems');
-                const toggle = document.querySelector('.mobile-menu-toggle');
-                nav.classList.toggle('mobile-menu-active');
-                toggle.classList.toggle('active');
-            }
 
-            // Close mobile menu when clicking on a link
-            document.querySelectorAll('#headitems a').forEach(link => {
-                link.addEventListener('click', () => {
-                    const nav = document.getElementById('headitems');
-                    const toggle = document.querySelector('.mobile-menu-toggle');
-                    nav.classList.remove('mobile-menu-active');
-                    toggle.classList.remove('active');
-                });
-            });
-
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', (e) => {
-                const nav = document.getElementById('headitems');
-                const toggle = document.querySelector('.mobile-menu-toggle');
-                const header = document.querySelector('.header');
-                
-                if (!header.contains(e.target) && nav.classList.contains('mobile-menu-active')) {
-                    nav.classList.remove('mobile-menu-active');
-                    toggle.classList.remove('active');
-                }
-            });
-        </script>
 
     
 </body>
