@@ -229,6 +229,209 @@ h5{
     font-size: 150%;
 }
 
+/* ============================================ */
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+/* ============================================ */
+
+/* Tablet Design (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 10vh;
+    }
+    
+    .logo {
+        width: 15vw;
+    }
+    
+    #headitems ul {
+        padding-right: 100px;
+    }
+    
+    #headitems ul li {
+        padding: 0.8rem;
+        font-size: 1.3rem;
+    }
+    
+    .buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .parktrek, #malls, #park, #trek {
+        margin-left: 0;
+        margin: 5px;
+        font-size: 18px;
+    }
+    
+    .othercontent {
+        width: 70%;
+    }
+    
+    .othercontent ul {
+        font-size: 130%;
+        margin-left: 40px;
+    }
+    
+    #footer {
+        height: 500px;
+    }
+    
+    #links li a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Design (up to 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 12vh;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        width: 20vw;
+        height: 60%;
+        margin-bottom: 0.5rem;
+    }
+    
+    #headitems {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #headitems ul {
+        padding-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    #headitems ul li {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .parktrek, #malls, #park, #trek {
+        margin-left: 0;
+        margin: 0;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        min-width: 150px;
+    }
+    
+    .othercontent {
+        width: 90%;
+        margin-top: 3vh;
+        border-radius: 15px;
+    }
+    
+    .othercontent h1 {
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .othercontent ul {
+        font-size: 100%;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+    
+    #footer {
+        height: auto;
+        min-height: 400px;
+        padding: 2rem 0;
+    }
+    
+    #footer table {
+        padding-left: 10px;
+        width: 95vw;
+    }
+    
+    #links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #links li {
+        margin: 1rem;
+    }
+    
+    #links li a {
+        font-size: 1.2rem;
+    }
+    
+    h5 {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+/* Small Mobile Design (up to 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        height: 15vh;
+        padding: 0.5rem 0;
+    }
+    
+    .logo {
+        width: 25vw;
+    }
+    
+    #headitems ul li {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    .buttons {
+        margin-top: 20px;
+    }
+    
+    .parktrek, #malls, #park, #trek {
+        font-size: 14px;
+        padding: 8px 15px;
+        min-width: 120px;
+    }
+    
+    .othercontent {
+        width: 95%;
+        border-radius: 10px;
+    }
+    
+    .othercontent h1 {
+        font-size: 1.3rem;
+        padding-left: 8px;
+    }
+    
+    .othercontent ul {
+        font-size: 90%;
+        margin-left: 20px;
+    }
+    
+    #footer {
+        min-height: 350px;
+    }
+    
+    #links li a {
+        font-size: 1rem;
+    }
+    
+    h5 {
+        font-size: 0.8rem;
+    }
+}
+
 
 
 
