@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="religious.css">
+    <title>Home - Jaipur Tourism - Explore the Pink City</title>
+    <meta name="description" content="Welcome to Jaipur Tourism. Discover the beauty of the Pink City with our comprehensive guide featuring historical sites, religious places, and adventure spots.">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <div id="page">
 
             <!-- Header starts here -->
 
-            <div class="header">
+            <header class="header">
                     <div class="logo">
-                        <a href="headder.html"> <img src="logo.png" height="100%" width="100%" ></a>
+                        <a href="index.html"> <img src="logo.png" height="100%" width="100%" alt="Jaipur Tourism Logo"></a>
                     </div>
-                    <div id="headitems">
+                    
+                    <!-- Mobile menu toggle -->
+                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <nav id="headitems">
                         <ul>
-                            <li><a id="homeicon"  href="home.html">HOME</a></li>
-                            <li><a  class="elements"   href="historical.html">HISTORICAL</a></li>
-                            <li><a  class="elements"   href="religious.html">RELIGIOUS</a></li>
-                            <li><a  class="elements"   href="others.html">OTHERS</a></li>
-                            <li><a  class="elements"   href="contact.html" target="_blank">CONTACT US</a></li>
-                            </ul>
-
-                    </div>
+                            <li><a id="homeicon" href="home.html">HOME</a></li>
+                            <li><a class="elements" href="historical.html">HISTORICAL</a></li>
+                            <li><a class="elements" href="religious.html">RELIGIOUS</a></li>
+                            <li><a class="elements" href="others.html">OTHERS</a></li>
+                            <li><a class="elements" href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
 
             
-            </div>
+            </header>
 
 
             <!-- Header ends here -->
@@ -423,7 +434,36 @@
 
         </div>
 
+        <script>
+            function toggleMobileMenu() {
+                const nav = document.getElementById('headitems');
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                nav.classList.toggle('mobile-menu-active');
+                toggle.classList.toggle('active');
+            }
 
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('#headitems a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const nav = document.getElementById('headitems');
+                    const toggle = document.querySelector('.mobile-menu-toggle');
+                    nav.classList.remove('mobile-menu-active');
+                    toggle.classList.remove('active');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (e) => {
+                const nav = document.getElementById('headitems');
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                const header = document.querySelector('.header');
+                
+                if (!header.contains(e.target) && nav.classList.contains('mobile-menu-active')) {
+                    nav.classList.remove('mobile-menu-active');
+                    toggle.classList.remove('active');
+                }
+            });
+        </script>
 
     
 </body>
