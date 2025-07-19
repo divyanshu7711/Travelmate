@@ -76,3 +76,135 @@
     font-size: 42px;
 }
 
+/* ============================================ */
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+/* ============================================ */
+
+/* Tablet Design (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 10vh;
+    }
+    
+    .logo {
+        width: 15vw;
+    }
+    
+    #headitems ul {
+        padding-right: 100px;
+    }
+    
+    #headitems ul li {
+        padding: 0.8rem;
+        font-size: 1.3rem;
+    }
+    
+    #page h1 {
+        font-size: 35px;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    #links li a {
+        margin-left: 200px;
+        font-size: 35px;
+    }
+    
+    #links li a:hover {
+        font-size: 37px;
+    }
+}
+
+/* Mobile Design (up to 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 12vh;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        width: 20vw;
+        height: 60%;
+        margin-bottom: 0.5rem;
+    }
+    
+    #headitems {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #headitems ul {
+        padding-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    #headitems ul li {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    #page h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: 0;
+    }
+    
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+    #links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+    #links li a {
+        margin-left: 0;
+        font-size: 24px;
+        display: block;
+        padding: 1rem;
+    }
+    
+    #links li a:hover {
+        font-size: 26px;
+    }
+}
+
+/* Small Mobile Design (up to 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        height: 15vh;
+        padding: 0.5rem 0;
+    }
+    
+    .logo {
+        width: 25vw;
+    }
+    
+    #headitems ul li {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    #page h1 {
+        font-size: 22px;
+        padding: 1.5rem 0.5rem;
+    }
+    
+    #links li a {
+        font-size: 20px;
+        padding: 0.8rem;
+    }
+    
+    #links li a:hover {
+        font-size: 22px;
+    }
+}
+
